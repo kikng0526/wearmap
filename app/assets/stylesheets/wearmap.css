@@ -1,0 +1,41 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  padding: 150px 0;
+}
+
+#tab a {
+  display: inline-block;
+  color: black;                     
+  text-decoration: none;
+  font-weight: bold;               
+  position: relative;               
+}
+
+#tab a:hover{
+  text-decoration: underline;
+}
+
+#tabbody {
+  width: 80%;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: aqua;
+}
+
+#tabbody div {
+  border: 1px solid black; /* 枠線：黒色の実線を1pxの太さで引く */
+  margin-top: -1px;        /* 上側にあるタブと1pxだけ重ねるために「-1px」を指定 */
+  padding: 1em;            /* 内側の余白量 */
+  background-color: white; /* 背景色：白色 */
+  position: relative;      /* z-indexを調整するために必要 */
+  z-index: 0;              /* 重なり順序を「最も背面」にするため */
+}
+
+#tabcontrol a:nth-child(1), #tabbody div:nth-child(1) { background-color: #ffffdd; }/* 1つ目のタブとその中身用の配色 */
+#tabcontrol a:nth-child(2), #tabbody div:nth-child(2) { background-color: #ddffdd; }/* 2つ目のタブとその中身用の配色 */
+#tabcontrol a:nth-child(3), #tabbody div:nth-child(3) { background-color: #ddddff; }/* 3つ目のタブとその中身用の配色 */
+
