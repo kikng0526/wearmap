@@ -19,12 +19,12 @@ main {
   text-decoration: underline;
 }
 
-#tabbody {
+/* #tabbody {
   width: 80%;
   margin: 0 auto;
   min-height: 100vh;
   background-color: aqua;
-}
+} */
 
 #tabbody div {
   border: 1px solid black; /* 枠線：黒色の実線を1pxの太さで引く */
