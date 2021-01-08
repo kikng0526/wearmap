@@ -1,0 +1,2 @@
+class Wearmap < ApplicationRecord
+end
